@@ -1,0 +1,132 @@
+.programs-container {
+    background-color: rgb(210, 209, 209);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.programs-title {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.programs-title::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 90%;
+    left: 0;
+    background-color: yellow;
+    border-radius: 50px;
+}
+
+.single-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program-img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 30rem;
+}
+
+.program-img-container img {
+    width: 100%;
+}
+
+.program-img-container .program-name {
+    position: absolute;
+    font-size: 2rem;
+    align-self: flex-end;
+    color: white;
+    letter-spacing: 2px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+
+.program-img-container::before {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    box-shadow: 0 0 30px 40px rgba(0, 0, 0, 0.834);
+    z-index: 1;
+}
+
+
+.programs-container .schedule {
+    font-size: 1.2rem;
+    color: rgb(189, 189, 189);
+    z-index: 1;
+}
+
+
+.programs-container button {
+    height: fit-content;
+    border: none;
+    width: 7rem;
+    align-self: flex-end;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 10px;
+    letter-spacing: .1px;
+    cursor: pointer;
+    text-transform: capitalize;
+    z-index: 1;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.653);
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+
+}
+
+.programs-container button:hover {
+    color: white;
+}
+
+
+.programs-container button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+    background: black;
+}
+
+
+.programs-container button:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.programs-container {
+    position: relative;
+    background-size: cover;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.604);
+    z-index: 0;
+}

@@ -1,0 +1,55 @@
+.footer-container {
+    background-color: #333;
+    height: 24rem;
+    display: flex;
+    padding: 2rem;
+    color: white;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+
+.about-container {
+    width: 30%;
+    height: 100%;
+}
+
+.categories {
+    width: 65%;
+    height: 100%;
+}
+
+.about-container .about-title,
+.footer-category-title {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.about-container .about-data {
+    letter-spacing: 1px;
+    font-size: .8rem;
+}
+
+
+.categories .footer-category-data {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 2px;
+    height: 80%;
+}
+
+.footer-category-data .single-category {
+    font-size: .8rem;
+    height: fit-content;
+    transition: .3s ease all;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+.footer-category-data .single-category:hover {
+    color: gray;
+}

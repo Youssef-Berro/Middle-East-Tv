@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: .2rem 1rem;
+    background-color: black;
+    background-image: url('./../../img/utils/jerusalem.jpg');
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    background-color: black;
+    z-index: 0;
+    box-shadow: 40px 0 100px 60px black;
+}
+
+.title {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Josefin Sans Std', sans-serif;
+    letter-spacing: 1px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.title span {
+    font-size: 1.8rem;
+}
+
+.title sub {
+    font-size: .8rem;
+}

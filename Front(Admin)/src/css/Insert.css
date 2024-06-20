@@ -1,0 +1,96 @@
+.insert-news-container,
+.insert-ad-container,
+.insert-program-container {
+    width: fit-content;
+    margin: 3rem auto;
+    display: flex;
+}
+
+
+.insert-news-container .form,
+.insert-ad-container .form,
+.insert-program-container .form{
+    border-radius: 20px !important;
+    padding: 2rem !important;
+    width: fit-content !important;
+}
+
+.insert-form-title {
+    color: white;
+    font-size: 2rem;
+    align-self: self-start;
+    letter-spacing: 2px;
+}
+
+.form-data {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+}
+
+.form-data > div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.insert-news-container .create-btn,
+.insert-ad-container .create-btn,
+.insert-program-container .create-btn{
+    border-radius: 10px;
+    width: 5rem;
+    background-color: #eee !important;
+    color: black !important;
+    box-shadow: 0 0 10px 2px white !important;
+    border: none !important;
+    align-self: flex-end;
+}
+
+
+input[type="file"] {
+    display: none;
+    color: white;
+}
+
+
+input[type="file"]:not([disabled]) + label {
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 10rem;
+    background-color: #333 !important;
+    color: white !important;
+    box-shadow: 0 0 10px 2px #333 !important;
+    padding: .3rem;
+    text-align: center;
+    transition: .3s ease all;
+}
+
+input[type="file"]:not([disabled]) + label:hover {
+    transform: scale(1.04);
+}
+
+
+.form-section1-program {
+    margin-top: -3rem;
+    display: flex;
+}
+
+
+.form-section2  .insert-btns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.discard-btn,
+.drop-btn {
+    background-color: red !important;
+    border: none !important;
+    outline: none !important;
+}

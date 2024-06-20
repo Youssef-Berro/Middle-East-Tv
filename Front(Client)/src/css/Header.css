@@ -1,0 +1,145 @@
+.header-container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+    position: fixed;
+    width: 99.2%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-logo {
+    filter: invert(1);
+    width: 7vw;
+    cursor: pointer;
+}
+
+.business-name {
+    filter: invert(1);
+    height: 20px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.header-container .section2 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.section2 .category-name {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section2 .category-name:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.section2 .category-name:hover:after {
+    width: 110%;
+}
+
+
+.section3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.section3 .search {
+    padding: 10px 28px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+.search-icon {
+    width: 20px;
+    height: 25px;
+    filter: invert(1);
+    position: absolute;
+    left: 1.5px;
+}
+
+.search-result {
+    position: absolute;
+    top: 2.2rem;
+    width: 14rem;
+    border-radius: 0 0 0 20px;
+    background-color: grey;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+
+.single-news-search-result {
+    padding: 8px;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.single-news-search-result:hover {
+    background-color: black;
+}
+
+.single-news-search-result img {
+    width: 3rem;
+    height: 2rem;
+    border-radius: 50px;
+}
+
+.search-result-right-section {
+    float: left;
+    width: 70%;
+}
+
+.search-result-news-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    font-size: .9rem;
+}
+
+.search-result-news-category-specific-name {
+    color: rgb(203, 202, 202);
+    position: relative;
+    padding: 2px 8px;
+    font-size: .8rem;
+}
+
+.search-result-news-category-specific-name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 80%;
+    width: 2px;
+    background-color: red;
+    border-radius: 50px;
+}
